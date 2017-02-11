@@ -20,10 +20,10 @@ Command line 指令操作 [Command Line指令](https://www.renfei.org/blog/mac-o
 # Gulp + php server 開發專案
 
 ### 環境建置
-npm i
-
-可以不用安裝，因為這是下載lib，可以複製之前載過的lib資料夾
-bower i 
+c: npm i
+<br />
+c: 可以不用安裝，因為這是下載lib，可以複製之前載過的lib資料夾
+c: bower i 
 <br />
 ### 執行專案
 c: projectName > gulp   (run static )  
