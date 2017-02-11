@@ -55,13 +55,13 @@ gulp.task('bower', function() {
 
 //  sass
 gulp.task('styles', function() {
-    gulp.src('project/sass/*.scss') //要處理的scss檔案
+    gulp.src('project/sass/**/*.scss') //要處理的scss檔案
         //  .pipe(gulpPlumber())
         .pipe(sass().on('error', sass.logError))
         .pipe(sass({
             outputStyle: 'expanded' // compact , expanded, nested
         }))
-        .pipe(gulp.dest('css')) //指定編譯後的路徑
+        .pipe(gulp.dest('project/css/')) //指定編譯後的路徑
 
 });
 
@@ -74,7 +74,7 @@ gulp.task('server', ['php'], function() {
         port: 8888,
         open: true
     });
-    gulp.watch('project/sass/*.scss', ['styles']).on('change', reload); //watch  sass
+    gulp.watch('project/sass/**/*.scss', ['styles']).on('change', reload); //watch  sass
     gulp.watch('project/*.html').on('change', reload); //watch html
     gulp.watch('project/css/*.css', ['css']).on('change', reload); //watch  sass
     gulp.watch('project/bower_components', ['bower']); //watch html
@@ -90,7 +90,7 @@ gulp.task('static', ['styles'], function() {
           baseDir: "project/"
       }
     });
-    gulp.watch('project/sass/*.scss', ['styles']).on('change', reload); //watch  sass
+    gulp.watch('project/sass/**/*.scss', ['styles']).on('change', reload); //watch  sass
     gulp.watch('project/css/*.css', ['css']).on('change', reload); //watch  sass
     gulp.watch('project/*.html').on('change', reload); //watch html
     gulp.watch('project/bower_components', ['bower']); //watch html
