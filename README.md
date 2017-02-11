@@ -24,8 +24,8 @@ Command line 指令操作 [Command Line指令](https://www.renfei.org/blog/mac-o
 bower i(可以不用載，複製原本的lib資料夾即可)
 <br />
 ### 執行專案
-projectName > gulp   (run static ) 一般 html
- projectName > gulp online (run dync php )  動態 php
+projectName > gulp   (run static 一般 html) 
+ projectName > gulp online (run dync php 動態 php)  
 <br />
 ### 再把project資料夾放進去(跟gulpfile 同一層)
 
