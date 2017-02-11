@@ -76,6 +76,7 @@ gulp.task('server', ['php'], function() {
     });
     gulp.watch('project/sass/**/*.scss', ['styles']).on('change', reload); //watch  sass
     gulp.watch('project/*.html').on('change', reload); //watch html
+    gulp.watch('project/js/*.js').on('change', reload); //watch js
     gulp.watch('project/css/*.css', ['css']).on('change', reload); //watch  sass
     gulp.watch('project/bower_components', ['bower']); //watch html
     gulp.watch('project/*.php').on('change', function () {
@@ -92,6 +93,7 @@ gulp.task('static', ['styles'], function() {
     });
     gulp.watch('project/sass/**/*.scss', ['styles']).on('change', reload); //watch  sass
     gulp.watch('project/css/*.css', ['css']).on('change', reload); //watch  sass
+    gulp.watch('project/js/*.js').on('change', reload); //watch js
     gulp.watch('project/*.html').on('change', reload); //watch html
     gulp.watch('project/bower_components', ['bower']); //watch html
 });
