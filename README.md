@@ -20,14 +20,12 @@ Command line 指令操作 [Command Line指令](https://www.renfei.org/blog/mac-o
 # Gulp + php server 開發專案
 
 ### 環境建置
-c: npm i
-<br />
-c: 可以不用安裝，因為這是下載lib，可以複製之前載過的lib資料夾
-c: bower i 
+ npm i
+bower i(可以不用載，複製原本的lib資料夾即可)
 <br />
 ### 執行專案
-c: projectName > gulp   (run static )  
-c: projectName > gulp online (run dync php )  
+projectName > gulp   (run static ) 一般 html
+ projectName > gulp online (run dync php )  動態 php
 <br />
 ### 再把project資料夾放進去(跟gulpfile 同一層)
 
