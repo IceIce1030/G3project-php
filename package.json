@@ -1,0 +1,26 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "This is my first gulp project",
+  "homepage": "",
+  "author": {
+    "name": "bryan",
+    "email": "bryant6831@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-ruby-sass": "~2.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "browser-sync": "^2.18.5",
+    "gulp-bower": "0.0.13",
+    "gulp-connect-php": "^0.0.8",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "postcss-short-color": "^2.0.1"
+  }
+}
