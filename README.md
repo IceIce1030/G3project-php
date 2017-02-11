@@ -26,6 +26,8 @@ bower i
 ### 執行專案
 c: projectName > gulp   (run static )  
 c: projectName > gulp online (run dync php )  
+<br />
+### 再把project資料夾放進去(跟gulpfile 同一層)
 
 
 
